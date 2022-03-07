@@ -21,11 +21,11 @@
 
 .encabezado__descripcion{
    font-size: 18px;
+   font-weight: 400;
    line-height: 22px;
 }
 
 .encabezado__imagen{
    height: auto;
    width: auto;
-   
 }

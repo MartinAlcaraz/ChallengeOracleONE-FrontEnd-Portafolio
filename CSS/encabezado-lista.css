@@ -1,10 +1,6 @@
-.enlaces{
-   padding: 0rem 4rem;
-   border: 1px solid black;
-}
-
-.enlaces__ul{
-
+.encabezado__lista{
+   margin: 0rem 0rem;
+   font-weight: 500;
 }
 
 .lista__item {
@@ -12,13 +8,13 @@
    margin-right: 4rem;
 }
 
-.lista__item a{
+.lista__link{
    color: #464646;
    font-size: 16px;
    text-decoration: none;
 }
 
-.lista__item img{
+.lista__img{
    width: 10px;
    height: 10px;  
 }

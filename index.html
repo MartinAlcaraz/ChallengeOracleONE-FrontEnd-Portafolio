@@ -10,10 +10,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-   <link href="reset.css" rel="stylesheet" />
-   <link href="normalize.css" rel="stylesheet" />
-   <link href="style.css" rel="stylesheet">
-   <link href="css/navbar.css" rel="stylesheet" />
+   <link href="css/reset.css" rel="stylesheet" />
+   <link href="css/normalize.css" rel="stylesheet" />
+   <link href="css/base.css" rel="stylesheet">
+   <link href="css/menu.css" rel="stylesheet" />
+   <link href="css/estrellas.css" rel="stylesheet" />
    <link href="css/encabezado.css" rel="stylesheet" />
    <link href="css/encabezado-lista.css" rel="stylesheet" />
 
@@ -21,16 +22,28 @@
 
 <body>
    <header class="header">
-      <nav class="navbar">
-         <ul class="navbar__ul--left">
-            <li class="navbar__item"> <a href="">A. Martin Alcaraz</a></li>
+      <nav class="menu">
+         <ul class="menu__left">
+            <li class="menu__item  menu__item--primero">
+               <a class="menu__link menu__link--primero" href=""> 
+                  <div class="estrellas">
+                     <img class="estrellas__primera" src="img/estrella.png">
+                     <div class="estrellas__segundas">
+                        <img class="estrellas__segundas--sup" src="img/estrella-chica.png">
+                        <img class="estrellas__segundas--inf" src="img/estrella-chica.png">
+                     </div>
+                  </div>
+                  A. Martin Alcaraz
+               </a>
+            </li>
          </ul>
-         <ul class="navbar__ul--right">
-            <li class="navbar__item"> <a href="">Sobre mi</a></li>
-            <li class="navbar__item"> <a href="">Skills</a></li>
-            <li class="navbar__item"> <a href="">Formación</a></li>
-            <li class="navbar__item"> <a href="">Proyectos</a></li>
-            <li class="navbar__item"> <a href="martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
+         <ul class="menu__right">
+            <li class="menu__item"> <a class="menu__link" href="">Sobre mi</a></li>
+            <li class="menu__item"> <a class="menu__link" href="">Skills</a></li>
+            <li class="menu__item"> <a class="menu__link" href="">Formación</a></li>
+            <li class="menu__item"> <a class="menu__link" href="">Proyectos</a></li>
+            <li class="menu__item  menu__item--ultimo"> <a class="menu__link menu__link--ultimo"
+                  href="martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
          </ul>
       </nav>
       <div class="encabezado">
@@ -40,20 +53,30 @@
             </h1>
             <p class="encabezado__descripcion">
                Estudie en adsfjk asdflkasdf lk sdfk asdsfkj sadlfk asdf adsfjk asdflkasdf lk sdfk asdsfkj sadlfk asdf
-               adsfjk asdflkasdf  asdflkasdf lk sdfk asdsfkj sadlfk asdf.
+               adsfjk asdflkasdf asdflkasdf lk sdfk asdsfkj sadlfk asdf.
             </p>
 
             <ul class="encabezado__lista">
-               <li class="lista__item"><a href="https://www.linkedin.com/in/angel-martin-alcaraz/">LinkedIn <img
-                        src="img/Vector.png"> </a></li>
-               <li class="lista__item"><a href="https://github.com/MartinAlcaraz">GitHub <img src="img/Vector.png">
-                  </a></li>
-               <li class="lista__item"><a href="#">Curriculum <img src="img/Vector.png"> </a></li>
+               <li class="lista__item">
+                  <a class="lista__link" href="https://www.linkedin.com/in/angel-martin-alcaraz/">LinkedIn
+                     <img class="lista__img" src="img/Vector.png">
+                  </a>
+               </li>
+               <li class="lista__item">
+                  <a class="lista__link" href="https://github.com/MartinAlcaraz">GitHub
+                     <img class="lista__img" src="img/Vector.png">
+                  </a>
+               </li>
+               <li class="lista__item">
+                  <a class="lista__link" href="#">Curriculum
+                     <img class="lista__img" src="img/Vector.png">
+                  </a>
+               </li>
             </ul>
 
          </div>
-         <div class="encabezado_imagen">
-            <img src="img/icono-M.png" height="368px" alt="A.Martin Alcaraz">
+         <div class="encabezado__imagen">
+            <img class="encabezado__foto" src="img/icono-M.png" height="368px" alt="A.Martin Alcaraz">
          </div>
       </div>
 
