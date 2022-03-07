@@ -1,0 +1,31 @@
+.encabezado{
+   display: flex;
+   align-items: center;
+   
+   height: 80vh;
+   width: auto;
+   margin: 0rem 4rem;
+   padding: 1rem 0 0;
+   
+}
+.encabezado__principal{
+   flex-grow: 4;
+}
+
+.encabezado__titulo{
+   font-weight: bold;
+   font-size: 42px;
+   line-height: 51px;
+   flex-grow: 1;
+}
+
+.encabezado__descripcion{
+   font-size: 18px;
+   line-height: 22px;
+}
+
+.encabezado__imagen{
+   height: auto;
+   width: auto;
+   
+}

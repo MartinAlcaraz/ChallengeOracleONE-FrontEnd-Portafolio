@@ -1,0 +1,35 @@
+
+.navbar{
+   width: auto;
+   height: 10vh;
+      
+   display: flex;
+   justify-content: space-between;   
+   padding: 0rem 4rem;
+}
+
+.navbar__ul--left{
+   
+}
+
+.navbar__ul--right{
+   
+}
+
+.navbar__item{
+   display: inline-block;
+   list-style-type: none;
+   padding: 0.5rem 1rem;   
+   font-size: medium;
+}
+
+
+.navbar__item a{
+   color: #464646;
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   font-weight: 500;   
+   line-height: 19px;
+   text-decoration: none;
+   
+}
