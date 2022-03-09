@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt__BR">
+<html lang="es_AR">
 
 <head>
    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
@@ -17,15 +17,24 @@
    <link href="css/estrellas.css" rel="stylesheet" />
    <link href="css/encabezado.css" rel="stylesheet" />
    <link href="css/encabezado-lista.css" rel="stylesheet" />
+   <link href="css/seccion.css" rel="stylesheet">
+   <link href="css/sobre-mi.css" rel="stylesheet">
+
+   <link href="css/skills-hobbies.css" rel="stylesheet">
+   <link href="css/box.css" rel="stylesheet">
+
+   <link href="css/formacion-academica.css" rel="stylesheet">
+
 
 </head>
 
 <body>
    <header class="header">
+      <!----------------------  menu  -------------------------->
       <nav class="menu">
          <ul class="menu__left">
             <li class="menu__item  menu__item--primero">
-               <a class="menu__link menu__link--primero" href=""> 
+               <a class="menu__link menu__link--primero" href="index.html">
                   <div class="estrellas">
                      <img class="estrellas__primera" src="img/estrella.png">
                      <div class="estrellas__segundas">
@@ -38,22 +47,23 @@
             </li>
          </ul>
          <ul class="menu__right">
-            <li class="menu__item"> <a class="menu__link" href="">Sobre mi</a></li>
-            <li class="menu__item"> <a class="menu__link" href="">Skills</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#sobre-mi">Sobre mi</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#skills">Skills</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#hobbies">Hobbies</a></li>
             <li class="menu__item"> <a class="menu__link" href="">Formación</a></li>
             <li class="menu__item"> <a class="menu__link" href="">Proyectos</a></li>
             <li class="menu__item  menu__item--ultimo"> <a class="menu__link menu__link--ultimo"
-                  href="martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
+                  href="mailto:martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
          </ul>
       </nav>
+      <!----------------------  encabezado  -------------------------->
       <div class="encabezado">
          <div class="encabezado__principal">
-            <h1 class="encabezado__titulo">Hola, mi nombre es Angel Martin Alcaraz y soy estudiante de
-               desarrollo web Front-End.
+            <h1 class="encabezado__titulo">Hola, mi nombre es Angel Martin Alcaraz y soy desarrollador web Front-End.
             </h1>
             <p class="encabezado__descripcion">
-               Estudie en adsfjk asdflkasdf lk sdfk asdsfkj sadlfk asdf adsfjk asdflkasdf lk sdfk asdsfkj sadlfk asdf
-               adsfjk asdflkasdf asdflkasdf lk sdfk asdsfkj sadlfk asdf.
+               Estudie en Alura desarrollo web Front-End, y tambien estudie de forma autodidacta haciendo
+               diferentes cursos de programacion.
             </p>
 
             <ul class="encabezado__lista">
@@ -68,7 +78,7 @@
                   </a>
                </li>
                <li class="lista__item">
-                  <a class="lista__link" href="#">Curriculum
+                  <a class="lista__link" href="#" download="">Curriculum
                      <img class="lista__img" src="img/Vector.png">
                   </a>
                </li>
@@ -79,20 +89,109 @@
             <img class="encabezado__foto" src="img/icono-M.png" height="368px" alt="A.Martin Alcaraz">
          </div>
       </div>
-
-
-
    </header>
+   <!----------------------  main  -------------------------->
    <main class="main">
-      <section class="sobre-mi">
+      <section class="seccion">
+         <div class="sobre-mi" id="sobre-mi">
+            <h2 class="sobre-mi__titulo">Sobre mi</h2>
+            <p class="sobre-mi__descripcion">
+               Hola, tengo 36 años y soy de Argentina, me encanta la programacion y el desarrollo de
+               paginas web. Empecé mis estudios en la UNLP (Facultad de Informatica de La Plata) y segui
+               estudiando de forma autodidacta haciendo distintos cursos de programacion. Luego empecé
+               el curso de desarrollo web Front-End en el programa <strong>ONE Oracle Next Education</strong>.
+               Mi objetivo es seguir aprendiendo y lograr trabajar de esto que tanto me apasiona.
+            </p>
+
+            <div class="sobre-mi__firma"></div>
+         </div>
 
       </section>
-      <section class="skills">
-
+      <!------------    seccion skills      -------------->
+      <section class="seccion" id="skills">
+         <div class="skills-hobbies">
+            <h2 class="skills-hobbies__titulo">Skills</h2>
+            <div class="skills-hobbies__box">
+               <div class="box">
+                  <div class="box__img box__img--html"></div>
+                  <p class="box__nombre">HMLT</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--css"></div>
+                  <p class="box__nombre">CSS</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--javaScript"></div>
+                  <p class="box__nombre">JavaScript</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--C-sharp"></div>
+                  <p class="box__nombre">C#</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--visual-studio-code"></div>
+                  <p class="box__nombre">Visual Studio Code</p>
+               </div>
+            </div>
+         </div>
       </section>
+      </section>
+      <!------------    seccion hobbies      -------------->
+      <section class="seccion" id="hobbies">
+         <div class="skills-hobbies">
+            <h2 class="skills-hobbies__titulo">Hobbies</h2>
+            <div class="skills-hobbies__box">
+               <div class="box">
+                  <div class="box__img box__img--guitar"></div>
+                  <p class="box__nombre">Tocar Guitarra</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--running"></div>
+                  <p class="box__nombre">Running</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--basketball"></div>
+                  <p class="box__nombre">Basketball</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--music"></div>
+                  <p class="box__nombre">Music</p>
+               </div>
+               <div class="box">
+                  <div class="box__img box__img--movies"></div>
+                  <p class="box__nombre">Ver Peliculas</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!------------    seccion Formacion Academica      -------------->
+      <section class="seccion" id="formacion-academica">
+         <div class="formacion-academica">
+            <h2 class="formacion-academica__titulo">Formacion Academica</h2>
+            <div class="formacion-academica__big-box">
+               <div class="big-box">
+                  <div class="big-box__img big-box__img--unlp"></div>
+                  <p class="big-box__nombre">Facultad de Informatica</p>
+               </div>
+               <div class="big-box">
+                  <div class="big-box__img big-box__img--alura"></div>
+                  <p class="big-box__nombre">Alura</p>
+               </div>
+               <div class="big-box">
+                  <div class="big-box__img big-box__img--google-activate"></div>
+                  <p class="big-box__nombre">Introduccion Desarrollo Web</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
    </main>
+   <!----------------------  footer  -------------------------->
    <footer>
-
+      <br>
+      <br>
+      <br>
+      <br><br><br><br><br><br><br><br>
    </footer>
 </body>
 

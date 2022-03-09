@@ -1,0 +1,58 @@
+.box{
+   background-color: #FFFFFF;
+   border: 1px solid black;
+   padding: 16px 16px 10px;
+   line-height: 0;
+   height: 12vw;
+   width: 12vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.box__img{
+   width: 30px;
+   height: 40px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.box__img--html{
+   background-image: url(../img/logos/html-5.png);   
+}
+
+.box__img--css{
+   background-image: url(../img/logos/css-3.png);
+}
+
+.box__img--javaScript{
+   background-image: url(../img/logos/JavaScript.png);
+}
+
+.box__img--C-sharp{
+   background-image: url(../img/logos/C-sharp.png);
+}
+
+.box__img--visual-studio-code{
+   background-image: url(../img/logos/visual-studio-code.png);
+}
+
+.box__img--guitar{
+   background-image: url(../img/logos/guitar.png);
+}
+
+.box__img--running{
+   background-image: url(../img/logos/running.png);
+}
+
+.box__img--basketball{
+   background-image: url(../img/logos/basketball.png);
+}
+
+.box__img--music{
+   background-image: url(../img/logos/music.png);
+}
+
+.box__img--movies{
+   background-image: url(../img/logos/movies.png);
+}
