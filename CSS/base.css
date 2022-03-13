@@ -1,12 +1,28 @@
+
+:root{
+   --texto-blanco: #f6f6f6;
+   --texto-gris: #464646;
+
+   --bg-gris: #E5E5E5;
+   --bg-azul: #EAF2FD;
+   --bg-blanco: #FFFFFF;
+}
+
+*{
+   box-sizing: border-box;
+}
+
 html{
    box-sizing: border-box;
    font-family: 'Raleway', sans-serif;
    font-size: 16px;
    font-weight: 500;   
    line-height: 19px;
-   color: #464646;
+   color: var(--texto-gris);
 }
 
 body{
-   background-color: #f5f5f5;
+   background-color: var(--bg-gris);  
 }
+
+

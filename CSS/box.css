@@ -1,10 +1,12 @@
+
 .box{
-   background-color: #FFFFFF;
-   border: 1px solid black;
+   background-color: var(--bg-blanco);
    padding: 16px 16px 10px;
    line-height: 0;
-   height: 12vw;
-   width: 12vw;
+   margin-top: 2rem;
+   height: 32vw;
+   width: 44vw;
+
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -12,29 +14,29 @@
 
 .box__img{
    width: 30px;
-   height: 40px;
+   height: 35px;
    background-repeat: no-repeat;
    background-size: contain;
 }
 
 .box__img--html{
-   background-image: url(../img/logos/html-5.png);   
+   background-image: url(../img/logos/html-5.svg);   
 }
 
 .box__img--css{
-   background-image: url(../img/logos/css-3.png);
+   background-image: url(../img/logos/css.svg);
 }
 
 .box__img--javaScript{
-   background-image: url(../img/logos/JavaScript.png);
+   background-image: url(../img/logos/javaScript.svg);
 }
 
 .box__img--C-sharp{
-   background-image: url(../img/logos/C-sharp.png);
+   background-image: url(../img/logos/c-sharp.svg);
 }
 
 .box__img--visual-studio-code{
-   background-image: url(../img/logos/visual-studio-code.png);
+   background-image: url(../img/logos/visual-studio-code.svg);
 }
 
 .box__img--guitar{

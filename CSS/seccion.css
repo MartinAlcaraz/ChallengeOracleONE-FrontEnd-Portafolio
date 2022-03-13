@@ -1,5 +1,10 @@
 
 .seccion{
-   padding: 2rem 0;
+   padding: 2vw;
+}
+
+.seccion--azul{
+   background-color: var(--bg-azul);
+   padding: 0;
    
 }

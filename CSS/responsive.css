@@ -1,0 +1,46 @@
+
+@media screen and (max-width: 400px) {
+   
+   .menu__link{
+      font-size: 0.8rem;
+   }
+}
+
+
+@media screen and (min-width: 768px) {
+   
+.seccion{
+   padding: 2vw 4vw;
+}
+.seccion--azul{
+   padding-top: 6vw;
+   padding-bottom: 6vw;
+}
+
+.encabezado{
+   flex-direction: row;
+   margin: 2rem 0 1rem;
+}
+
+.encabezado__imagen{
+   order: 1;
+}
+
+.skills-hobbies{
+   padding-top: 2vw;
+   
+}
+
+.skills-hobbies__container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+}
+
+.box{
+   height: 20vw;
+   width: 29vw;
+}
+
+
+}

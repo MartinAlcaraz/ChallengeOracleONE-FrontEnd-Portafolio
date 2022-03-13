@@ -1,18 +1,22 @@
 
 .menu{
    width: auto;
-   height: 10vh;
+   height: auto;
    display: flex;
    justify-content: space-between;   
-   margin: 0rem 6rem;
+   align-items: baseline;
+   margin: 0;
 }
 
 
 .menu__item{
    display: inline-block;
-   list-style-type: none;
-   padding: 0.5rem 0.5rem;   
+   list-style-type: none;   
    font-size: medium;
+}
+
+.menu__item--oculto{
+   display: none;
 }
 
 .menu__item--primero{
@@ -25,11 +29,11 @@
 }
 
 .menu__link{
-   color: #464646;
+   color: var(--texto-gris);
    font-family: 'Raleway', sans-serif;
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 500;   
-   line-height: 19px;
+   line-height: 1rem;
    text-decoration: none;
    
 }
@@ -39,5 +43,5 @@
 }
 
 .menu__link--ultimo{
-   font-weight: bold;
+   font-weight: 400;
 }

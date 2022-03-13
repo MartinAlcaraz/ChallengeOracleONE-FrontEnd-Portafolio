@@ -4,15 +4,20 @@
 <head>
    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
    <meta charset="UTF__8" />
-   <meta name="viewport" content="width=device__width, initial__scale=1.0" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
    <title>Portafolio A. Martin Alcaraz</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
    <link href="css/reset.css" rel="stylesheet" />
    <link href="css/normalize.css" rel="stylesheet" />
+   
    <link href="css/base.css" rel="stylesheet">
+
    <link href="css/menu.css" rel="stylesheet" />
    <link href="css/estrellas.css" rel="stylesheet" />
    <link href="css/encabezado.css" rel="stylesheet" />
@@ -24,22 +29,23 @@
    <link href="css/box.css" rel="stylesheet">
 
    <link href="css/formacion-academica.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet" />
 
 
 </head>
 
 <body>
-   <header class="header">
-      <!----------------------  menu  -------------------------->
+   <header class="seccion">
+           <!----------------------  menu  -------------------------->
       <nav class="menu">
          <ul class="menu__left">
             <li class="menu__item  menu__item--primero">
                <a class="menu__link menu__link--primero" href="index.html">
                   <div class="estrellas">
-                     <img class="estrellas__primera" src="img/estrella.png">
+                     <img class="estrellas__primera" src="img/estrella.svg">
                      <div class="estrellas__segundas">
-                        <img class="estrellas__segundas--sup" src="img/estrella-chica.png">
-                        <img class="estrellas__segundas--inf" src="img/estrella-chica.png">
+                        <img class="estrellas__segundas--sup estrella-chica" src="img/estrella-chica.svg">
+                        <img class="estrellas__segundas--inf estrella-chica" src="img/estrella-chica.svg">
                      </div>
                   </div>
                   A. Martin Alcaraz
@@ -47,12 +53,12 @@
             </li>
          </ul>
          <ul class="menu__right">
-            <li class="menu__item"> <a class="menu__link" href="#sobre-mi">Sobre mi</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#skills">Skills</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#hobbies">Hobbies</a></li>
-            <li class="menu__item"> <a class="menu__link" href="">Formación</a></li>
-            <li class="menu__item"> <a class="menu__link" href="">Proyectos</a></li>
-            <li class="menu__item  menu__item--ultimo"> <a class="menu__link menu__link--ultimo"
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#sobre-mi">Sobre mi</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#skills">Skills</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#hobbies">Hobbies</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="">Formación</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="">Proyectos</a></li>
+            <li class="menu__item menu__item--ultimo"> <a class="menu__link menu__link--ultimo"
                   href="mailto:martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
          </ul>
       </nav>
@@ -62,8 +68,7 @@
             <h1 class="encabezado__titulo">Hola, mi nombre es Angel Martin Alcaraz y soy desarrollador web Front-End.
             </h1>
             <p class="encabezado__descripcion">
-               Estudie en Alura desarrollo web Front-End, y tambien estudie de forma autodidacta haciendo
-               diferentes cursos de programacion.
+               Estudie en Alura desarrollo web Front-End, entusiasta de la tecnologia y autodidacta.
             </p>
 
             <ul class="encabezado__lista">
@@ -78,7 +83,7 @@
                   </a>
                </li>
                <li class="lista__item">
-                  <a class="lista__link" href="#" download="">Curriculum
+                  <a class="lista__link" href="#" download="Curriculum Alcaraz">Curriculum
                      <img class="lista__img" src="img/Vector.png">
                   </a>
                </li>
@@ -86,13 +91,13 @@
 
          </div>
          <div class="encabezado__imagen">
-            <img class="encabezado__foto" src="img/icono-M.png" height="368px" alt="A.Martin Alcaraz">
+            <img class="encabezado__foto" src="img/asd.bmp" height="368px" alt="A.Martin Alcaraz">
          </div>
       </div>
    </header>
    <!----------------------  main  -------------------------->
    <main class="main">
-      <section class="seccion">
+      <section class="seccion seccion--azul">
          <div class="sobre-mi" id="sobre-mi">
             <h2 class="sobre-mi__titulo">Sobre mi</h2>
             <p class="sobre-mi__descripcion">
@@ -105,13 +110,12 @@
 
             <div class="sobre-mi__firma"></div>
          </div>
-
       </section>
       <!------------    seccion skills      -------------->
       <section class="seccion" id="skills">
          <div class="skills-hobbies">
             <h2 class="skills-hobbies__titulo">Skills</h2>
-            <div class="skills-hobbies__box">
+            <div class="skills-hobbies__container">
                <div class="box">
                   <div class="box__img box__img--html"></div>
                   <p class="box__nombre">HMLT</p>
@@ -130,17 +134,16 @@
                </div>
                <div class="box">
                   <div class="box__img box__img--visual-studio-code"></div>
-                  <p class="box__nombre">Visual Studio Code</p>
+                  <p class="box__nombre">VisualStudioCode</p>
                </div>
             </div>
          </div>
-      </section>
       </section>
       <!------------    seccion hobbies      -------------->
       <section class="seccion" id="hobbies">
          <div class="skills-hobbies">
             <h2 class="skills-hobbies__titulo">Hobbies</h2>
-            <div class="skills-hobbies__box">
+            <div class="skills-hobbies__container">
                <div class="box">
                   <div class="box__img box__img--guitar"></div>
                   <p class="box__nombre">Tocar Guitarra</p>
@@ -165,6 +168,7 @@
          </div>
       </section>
       <!------------    seccion Formacion Academica      -------------->
+      <!--
       <section class="seccion" id="formacion-academica">
          <div class="formacion-academica">
             <h2 class="formacion-academica__titulo">Formacion Academica</h2>
@@ -184,6 +188,7 @@
             </div>
          </div>
       </section>
+   -->
 
    </main>
    <!----------------------  footer  -------------------------->

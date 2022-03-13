@@ -5,12 +5,12 @@
 
 .lista__item {
    display: inline-block;
-   margin-right: 4rem;
+   margin-right: 2rem;
 }
 
 .lista__link{
    color: #464646;
-   font-size: 16px;
+   font-size: 14px;
    text-decoration: none;
 }
 
