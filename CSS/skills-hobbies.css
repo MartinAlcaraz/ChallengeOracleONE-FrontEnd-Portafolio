@@ -10,14 +10,19 @@
    font-size: 22px;
    line-height: 26px;
    text-align: center;
-   margin: 0.5rem 0 0.5rem;
+   margin: 1rem 0 2rem;
 }
 
 .skills-hobbies__container{
    margin: 0;
-
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   display: grid;
+   
+   grid-template-columns: 48% 48%;
+   row-gap: 2rem;
+   column-gap: 4%;
+   
+   /* grid-template-rows: repeat(50%); */
+   height: auto;
+   width: auto;
    
 }

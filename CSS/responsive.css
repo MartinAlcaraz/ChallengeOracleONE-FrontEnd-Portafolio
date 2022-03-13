@@ -1,6 +1,5 @@
 
-@media screen and (max-width: 400px) {
-   
+@media screen and (max-width: 420px) {
    .menu__link{
       font-size: 0.8rem;
    }
@@ -10,7 +9,7 @@
 @media screen and (min-width: 768px) {
    
 .seccion{
-   padding: 2vw 4vw;
+   padding: 2vw 5vw;
 }
 .seccion--azul{
    padding-top: 6vw;
@@ -27,20 +26,64 @@
 }
 
 .skills-hobbies{
-   padding-top: 2vw;
-   
+   padding-top: 2vw;   
 }
 
 .skills-hobbies__container{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-end;
+   grid-template-columns: 30% 30% 30%;
+   row-gap: 2rem;
+   column-gap: 5%;
 }
 
 .box{
-   height: 20vw;
-   width: 29vw;
+   height: 17vw;
 }
 
+}
+
+@media screen and (min-width: 1024px) {
+   
+   .menu__item--oculto{
+      display: inline-block;
+   }
+
+   .menu__item{
+      padding: 0 0.3rem;
+   }
+
+   .encabezado{
+      align-items: center;
+   }
+
+   .seccion{
+      padding: 2vw 8vw;
+   }
+   /* .seccion--azul{
+      padding-top: 6vw;
+      padding-bottom: 6vw;
+   } */
+   
+   .encabezado__titulo{
+      font-size: 45px;
+      line-height: 55px;
+   }   
+
+   .encabezado__principal{
+      width: 60%;
+   }
+
+   .encabezado__imagen{
+      width: 40%;
+   }
+   
+   .skills-hobbies__container{
+      grid-template-columns: 19% 19% 19% 19% 19% ;
+      row-gap: 2rem;
+      column-gap: 1%;
+   }
+   
+   .box{
+      height: 15vw;
+   }
 
 }

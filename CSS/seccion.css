@@ -1,10 +1,11 @@
 
 .seccion{
-   padding: 2vw;
+   padding: 3vw;
+   
 }
 
 .seccion--azul{
    background-color: var(--bg-azul);
-   padding: 0;
+   padding: 3vw;
    
 }

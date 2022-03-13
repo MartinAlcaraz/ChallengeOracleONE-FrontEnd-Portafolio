@@ -13,6 +13,7 @@
    display: inline-block;
    list-style-type: none;   
    font-size: medium;
+   padding: 0;
 }
 
 .menu__item--oculto{
