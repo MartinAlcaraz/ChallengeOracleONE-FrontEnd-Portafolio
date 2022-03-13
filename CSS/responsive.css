@@ -9,7 +9,7 @@
 @media screen and (min-width: 768px) {
    
 .seccion{
-   padding: 2vw 5vw;
+   padding: 2vw 6vw;
 }
 .seccion--azul{
    padding-top: 6vw;
@@ -21,8 +21,13 @@
    margin: 2rem 0 1rem;
 }
 
+.encabezado__principal{
+   width: 80%;
+}
+
 .encabezado__imagen{
    order: 1;
+   width: 20%;
 }
 
 .skills-hobbies{
@@ -40,6 +45,7 @@
 }
 
 }
+
 
 @media screen and (min-width: 1024px) {
    
