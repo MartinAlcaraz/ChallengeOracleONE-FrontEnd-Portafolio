@@ -12,17 +12,14 @@
    box-sizing: border-box;
 }
 
-html{
-   box-sizing: border-box;
-   font-family: 'Raleway', sans-serif;
+body{
+   background-color: var(--bg-gris);  
+   color: var(--texto-gris);
+   font-family: 'Raleway',  sans-serif;
    font-size: 16px;
    font-weight: 500;   
    line-height: 19px;
-   color: var(--texto-gris);
-}
-
-body{
-   background-color: var(--bg-gris);  
+   
 }
 
 
