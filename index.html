@@ -8,7 +8,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   
+
    <title>Portafolio A. Martin Alcaraz</title>
    <link rel="icon" type="image/png" href="./img/portafolio.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +32,15 @@
    <link href="./CSS/formacion-academica.css" rel="stylesheet">
    <link href="./CSS/big-box.css" rel="stylesheet">
 
+   <link href="./CSS/proyectos.css" rel="stylesheet">
+
    <link href="./CSS/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body>
    <header class="seccion">
-           <!----------------------  menu  -------------------------->
+      <!----------------------  menu  -------------------------->
       <nav class="menu">
          <ul class="menu__left">
             <li class="menu__item  menu__item--primero">
@@ -58,8 +60,8 @@
             <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#sobre-mi">Sobre mi</a></li>
             <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#skills">Skills</a></li>
             <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#hobbies">Hobbies</a></li>
-            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="">Formación</a></li>
-            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="">Proyectos</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#formacion">Formación</a></li>
+            <li class="menu__item menu__item--oculto"> <a class="menu__link" href="#proyectos">Proyectos</a></li>
             <li class="menu__item menu__item--ultimo"> <a class="menu__link menu__link--ultimo"
                   href="mailto:martincho_cqc@hotmail.com">martincho_cqc@hotmail.com</a></li>
          </ul>
@@ -75,7 +77,8 @@
 
             <ul class="encabezado__lista">
                <li class="lista__item">
-                  <a class="lista__link" href="https://www.linkedin.com/in/angel-martin-alcaraz/" target="_blank">LinkedIn
+                  <a class="lista__link" href="https://www.linkedin.com/in/angel-martin-alcaraz/"
+                     target="_blank">LinkedIn
                      <img class="lista__img" src="./img/Vector.png">
                   </a>
                </li>
@@ -85,8 +88,7 @@
                   </a>
                </li>
                <li class="lista__item">
-                  <a class="lista__link" href="./Curriculum-Angel-Martin-Alcaraz.pdf" 
-                      target="_blank">Curriculum
+                  <a class="lista__link" href="./Curriculum-Angel-Martin-Alcaraz.pdf" target="_blank">Curriculum
                      <img class="lista__img" src="./img/Vector.png">
                   </a>
                </li>
@@ -101,9 +103,9 @@
    <!----------------------  main  -------------------------->
    <main class="main">
 
-               <!--------------Seccion sobre-mi --------------->
+      <!--------------Seccion sobre-mi --------------->
       <section class="seccion seccion--azul" id="sobre-mi">
-         <div class="sobre-mi" >
+         <div class="sobre-mi">
             <h2 class="sobre-mi__titulo">Sobre mi</h2>
             <p class="sobre-mi__descripcion">
                Hola, tengo 36 años y soy de Argentina, me encanta la programacion y el desarrollo de
@@ -175,8 +177,8 @@
       </section>
 
       <!------------    seccion Formacion Academica      -------------->
-      
-      <section class="seccion seccion--azul" id="formacion-academica">
+
+      <section class="seccion seccion--azul" id="formacion">
          <div class="formacion-academica">
             <h2 class="formacion-academica__titulo">Formacion Academica</h2>
             <div class="formacion-academica__container">
@@ -187,15 +189,15 @@
                   <h3 class="big-box__titulo">Analista Programador Universitario</h3>
                   <p class="big-box__descripcion">2009 - UNLP</p>
                </div>
-               
+
                <div class="big-box">
                   <div class="big-box__img-container">
-                     <img src="./img/google-activate-logo.png" class="big-box__img big-box__img--google-activate">                 
+                     <img src="./img/google-activate-logo.png" class="big-box__img big-box__img--google-activate">
                   </div>
                   <h3 class="big-box__titulo">Introduccion al Desarrollo Web</h3>
                   <p class="big-box__descripcion">2021 - Google Actívate</p>
                </div>
-            
+
                <div class="big-box">
                   <div class="big-box__img-container">
                      <img src="./img/alura-logo.jpg" class="big-box__img big-box__img--alura">
@@ -203,11 +205,65 @@
                   <h3 class="big-box__titulo">Desarrollador Web Front-End</h3>
                   <p class="big-box__descripcion">2021 - Alura</p>
                </div>
-               
+
             </div>
          </div>
       </section>
-   
+
+      <!------------    seccion Experiencia profesional      -------------->
+      <section class="seccion" id="proyectos">
+         <h2 class="proyectos-todos__titulo">Experiencia Profesional</h2>
+         <div class="proyectos-todos__contenedor">
+
+            <!------------  __ proyecto encriptador __  ----------->
+
+            <div class="proyecto">
+               <div class="proyecto__container-imagen">
+                  <img class="proyecto__imagen" src="./img/encriptador-captura.jpg" alt="Encriptador de texto" title="Encriptador de texto">
+               </div>
+               <div class="proyecto__descripcion">
+                  <div class="proyecto__titulo">Encriptador De Texto</div>
+                  <div class="proyecto__texto">Challenge Oracle</div>
+                  <div class="proyecto__botones">
+                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
+                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
+                  </div>
+               </div>
+            </div>
+
+            <!------------ __ proyecto ahorcado __ ----------->
+            <div class="proyecto">
+               <div class="proyecto__container-imagen">
+                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado" title="Juego del ahorcado">
+               </div>
+               <div class="proyecto__descripcion">
+                  <div class="proyecto__titulo">Juego del ahorcado</div>
+                  <div class="proyecto__texto">Challenge de Oracle</div>
+                  <div class="proyecto__botones">
+                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
+                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
+                  </div>
+               </div>
+            </div>
+
+            <!------------ __ proyecto __  ----------->
+            <div class="proyecto">
+               <div class="proyecto__container-imagen">
+                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado" title="Juego del ahorcado">
+               </div>
+               <div class="proyecto__descripcion">
+                  <div class="proyecto__titulo"></div>
+                  <div class="proyecto__texto"></div>
+                  <div class="proyecto__botones">
+                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
+                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
 
    </main>
    <!----------------------  footer  -------------------------->
@@ -215,7 +271,7 @@
       <br>
       <br>
       <br>
-      
+
       <br><br><br><br>
    </footer>
 </body>

@@ -2,10 +2,14 @@
 :root{
    --texto-blanco: #f6f6f6;
    --texto-gris: #464646;
+   --texto-blanco-boton: #FFFFFF;
+   --texto-azul-boton: #2A7AE4;
 
    --bg-gris: #E5E5E5;
    --bg-azul: #EAF2FD;
    --bg-blanco: #FFFFFF;
+   --bg-boton-azul: #2A7AE4;
+
 }
 
 *{
