@@ -1,18 +1,16 @@
 
+.proyectos-todos__contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
 
 .proyectos-todos__titulo{
-
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     margin-top: 1rem;
-}
-
-.proyectos-todos__contenedor{
-    display: flex;
-    flex-direction: column;
-    margin: 0 5vw;
 }
 
 .proyecto {
@@ -44,10 +42,22 @@
 }
 
 .proyecto__boton {
-    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     margin: 8px 0;
+    box-shadow: 2px 2px 2px rgba(10,10,10, 0.5);
+}
+
+.proyecto__boton:hover {
+    cursor: pointer;
+}
+
+.proyecto__boton:active {
+    transform: translate(2px,2px);
+    box-shadow: none;
 }
 
 .proyecto__boton--repositorio {

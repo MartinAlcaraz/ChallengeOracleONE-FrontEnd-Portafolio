@@ -33,6 +33,7 @@
    <link href="./CSS/big-box.css" rel="stylesheet">
 
    <link href="./CSS/proyectos.css" rel="stylesheet">
+   <link href="./CSS/contacto.css" rel="stylesheet">
 
    <link href="./CSS/responsive.css" rel="stylesheet" />
 
@@ -109,7 +110,8 @@
             <h2 class="sobre-mi__titulo">Sobre mi</h2>
             <p class="sobre-mi__descripcion">
                Hola, tengo 36 años y soy de Argentina, me encanta la programacion y el desarrollo de
-               paginas web. Empecé mis estudios en la UNLP (Facultad de Informatica de La Plata) y segui
+               paginas web. <br>
+               Empecé mis estudios en la UNLP (Facultad de Informatica de La Plata) y segui
                estudiando de forma autodidacta haciendo distintos cursos de programacion. Luego inicié
                el curso de desarrollo web Front-End en el programa <strong>ONE Oracle Next Education</strong>.
                Mi objetivo es seguir aprendiendo y lograr trabajar de esto que tanto me apasiona.
@@ -219,14 +221,21 @@
 
             <div class="proyecto">
                <div class="proyecto__container-imagen">
-                  <img class="proyecto__imagen" src="./img/encriptador-captura.jpg" alt="Encriptador de texto" title="Encriptador de texto">
+                  <img class="proyecto__imagen" src="./img/encriptador-captura.jpg" alt="Encriptador de texto"
+                     title="Encriptador de texto">
                </div>
                <div class="proyecto__descripcion">
                   <div class="proyecto__titulo">Encriptador De Texto</div>
                   <div class="proyecto__texto">Challenge Oracle</div>
                   <div class="proyecto__botones">
-                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
-                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
+                     <a class="proyecto__boton proyecto__boton--repositorio"
+                        href="https://github.com/MartinAlcaraz/challenge-oracle-encriptador" target="_blank">
+                        Repositorio
+                     </a>
+                     <a class="proyecto__boton proyecto__boton--ver-demo"
+                        href="https://martinalcaraz.github.io/challenge-oracle-encriptador/" target="_blank">
+                        Ver Demo
+                     </a>
                   </div>
                </div>
             </div>
@@ -234,29 +243,21 @@
             <!------------ __ proyecto ahorcado __ ----------->
             <div class="proyecto">
                <div class="proyecto__container-imagen">
-                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado" title="Juego del ahorcado">
+                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado"
+                     title="Juego del ahorcado">
                </div>
                <div class="proyecto__descripcion">
                   <div class="proyecto__titulo">Juego del ahorcado</div>
                   <div class="proyecto__texto">Challenge de Oracle</div>
                   <div class="proyecto__botones">
-                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
-                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
-                  </div>
-               </div>
-            </div>
-
-            <!------------ __ proyecto __  ----------->
-            <div class="proyecto">
-               <div class="proyecto__container-imagen">
-                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado" title="Juego del ahorcado">
-               </div>
-               <div class="proyecto__descripcion">
-                  <div class="proyecto__titulo"></div>
-                  <div class="proyecto__texto"></div>
-                  <div class="proyecto__botones">
-                     <button class="proyecto__boton proyecto__boton--repositorio">Repositorio</button>
-                     <button class="proyecto__boton proyecto__boton--ver-demo">Ver Demo</button>
+                     <a class="proyecto__boton proyecto__boton--repositorio"
+                        href="https://github.com/MartinAlcaraz/Challenge-Oracle-Ahorcado" target="_blank">
+                        Repositorio
+                     </a>
+                     <a class="proyecto__boton proyecto__boton--ver-demo"
+                        href="https://martinalcaraz.github.io/Challenge-Oracle-Ahorcado/" target="_blank">
+                        Ver Demo
+                     </a>
                   </div>
                </div>
             </div>
@@ -264,6 +265,29 @@
          </div>
       </section>
 
+      <!----------------------- seccion contacto ------------------------->
+      <section class="seccion seccion--azul">
+         <div class="contacto margen-extra">
+            <div class="contacto__imagen"></div>
+            
+            <div class="contacto__texto">
+               <h3 class="contacto__titulo">Contacto</h3>
+               <p class="contacto__parrafo">¿Quieres contactarme?<br>
+                   Complete el siguiente formulario y me pondré en contacto con usted 
+                  lo antes posible.
+               </p>
+               <form class="contacto__formulario" action="" >
+                  <input class="form__input" type="text" placelabel="Nombre" placeholder="Nombre">
+                  <input class="form__input" type="text" palcelabel="E-mail" placeholder="correo@mail.com">
+                  <input class="form__input" type="text" placeholder="Asunto">
+                  <input class="form__input" type="text" placeholder="Mensaje">
+                  <input class="form__enviar" type="submit" value="Enviar mensaje">
+
+               </form>
+
+            </div>
+         </div>
+      </section>
 
    </main>
    <!----------------------  footer  -------------------------->
