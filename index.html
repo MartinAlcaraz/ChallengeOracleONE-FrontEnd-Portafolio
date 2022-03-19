@@ -35,6 +35,8 @@
    <link href="./CSS/proyectos.css" rel="stylesheet">
    <link href="./CSS/contacto.css" rel="stylesheet">
 
+   <link href="./CSS/footer.css" rel="stylesheet">
+   
    <link href="./CSS/responsive.css" rel="stylesheet" />
 
 </head>
@@ -228,11 +230,11 @@
                   <div class="proyecto__titulo">Encriptador De Texto</div>
                   <div class="proyecto__texto">Challenge Oracle</div>
                   <div class="proyecto__botones">
-                     <a class="proyecto__boton proyecto__boton--repositorio"
+                     <a class="boton proyecto__boton proyecto__boton--repositorio"
                         href="https://github.com/MartinAlcaraz/challenge-oracle-encriptador" target="_blank">
                         Repositorio
                      </a>
-                     <a class="proyecto__boton proyecto__boton--ver-demo"
+                     <a class="boton proyecto__boton proyecto__boton--ver-demo"
                         href="https://martinalcaraz.github.io/challenge-oracle-encriptador/" target="_blank">
                         Ver Demo
                      </a>
@@ -250,11 +252,33 @@
                   <div class="proyecto__titulo">Juego del ahorcado</div>
                   <div class="proyecto__texto">Challenge de Oracle</div>
                   <div class="proyecto__botones">
-                     <a class="proyecto__boton proyecto__boton--repositorio"
+                     <a class="boton proyecto__boton proyecto__boton--repositorio"
                         href="https://github.com/MartinAlcaraz/Challenge-Oracle-Ahorcado" target="_blank">
                         Repositorio
                      </a>
-                     <a class="proyecto__boton proyecto__boton--ver-demo"
+                     <a class="boton proyecto__boton proyecto__boton--ver-demo"
+                        href="https://martinalcaraz.github.io/Challenge-Oracle-Ahorcado/" target="_blank">
+                        Ver Demo
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <!------------ __ proyecto ahorcado __ ----------->
+            <div class="proyecto">
+               <div class="proyecto__container-imagen">
+                  <img class="proyecto__imagen" src="./img/ahorcado-captura.jpg" alt="Juego del ahorcado"
+                     title="Juego del ahorcado">
+               </div>
+               <div class="proyecto__descripcion">
+                  <div class="proyecto__titulo">Juego del ahorcado</div>
+                  <div class="proyecto__texto">Challenge de Oracle</div>
+                  <div class="proyecto__botones">
+                     <a class="boton proyecto__boton proyecto__boton--repositorio"
+                        href="https://github.com/MartinAlcaraz/Challenge-Oracle-Ahorcado" target="_blank">
+                        Repositorio
+                     </a>
+                     <a class="boton proyecto__boton proyecto__boton--ver-demo"
                         href="https://martinalcaraz.github.io/Challenge-Oracle-Ahorcado/" target="_blank">
                         Ver Demo
                      </a>
@@ -266,22 +290,49 @@
       </section>
 
       <!----------------------- seccion contacto ------------------------->
-      <section class="seccion seccion--azul">
-         <div class="contacto margen-extra">
-            <div class="contacto__imagen"></div>
-            
+      <section class="seccion seccion--azul seccion-contacto">
+         <div class="contacto">
+
+            <img class="contacto__imagen" src="./img/telefono.svg">
+
             <div class="contacto__texto">
                <h3 class="contacto__titulo">Contacto</h3>
                <p class="contacto__parrafo">¿Quieres contactarme?<br>
-                   Complete el siguiente formulario y me pondré en contacto con usted 
+                  Complete el siguiente formulario y me pondré en contacto con usted
                   lo antes posible.
                </p>
-               <form class="contacto__formulario" action="" >
-                  <input class="form__input" type="text" placelabel="Nombre" placeholder="Nombre">
-                  <input class="form__input" type="text" palcelabel="E-mail" placeholder="correo@mail.com">
-                  <input class="form__input" type="text" placeholder="Asunto">
-                  <input class="form__input" type="text" placeholder="Mensaje">
-                  <input class="form__enviar" type="submit" value="Enviar mensaje">
+               <form class="contacto__formulario" action="">
+         
+                  <div class="float-text">
+                     <input class="float-text__input" type="text" name="nombre" autocomplete="off" required>
+                     <span class="float-text__highlight"></span>
+                     <span class="float-text__bar"></span>
+                     <label class="float-text__label">Nombre</label>
+                  </div>
+
+                  <div class="float-text">
+                     <input class="float-text__input" type="email" name="email" autocomplete="off" required>
+                     <span class="float-text__highlight"></span>
+                     <span class="float-text__bar"></span>
+                     <label class="float-text__label">E-mail</label>
+                  </div>
+
+                  <div class="float-text">
+                     <input class="float-text__input" type="text" name="asunto" autocomplete="off" required>
+                     <span class="float-text__highlight"></span>
+                     <span class="float-text__bar"></span>
+                     <label class="float-text__label">Asunto</label>
+                  </div>
+
+                  <div class="float-text">
+                     <textarea class="float-text__input form__input--textarea" 
+                        type="text" rows="4" name="mensaje" required></textarea>
+                     <span class="float-text__highlight"></span>
+                     <span class="float-text__bar"></span>
+                     <label class="float-text__label">Mensaje</label>
+                  </div>
+
+                  <input class="boton form__enviar" type="submit" value="Enviar mensaje">
 
                </form>
 
@@ -291,12 +342,10 @@
 
    </main>
    <!----------------------  footer  -------------------------->
-   <footer>
-      <br>
-      <br>
-      <br>
-
-      <br><br><br><br>
+   <footer class="footer">
+      <img class="footer__img" src="./img/logo-M.png">
+      <p class="footer__texto">Desarrollado por A. Martin Alcaraz</p>
+      <p class="footer__texto">2002 &copy; </p>
    </footer>
 </body>
 

@@ -9,10 +9,21 @@
 }
 
 .formacion-academica__container{
-   width: 100%;
+   /* width: 100%;
    height: auto;
    display: flex;
    flex-direction: column;
+    */
+   margin: 0;
+   display: grid;
+   
+   grid-template-columns: 100%;
+   row-gap: 0rem;
+   column-gap: 0%;
+   
+   width: 100%;
+   height: auto;
+   
 }
 
 
