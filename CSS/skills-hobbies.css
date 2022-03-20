@@ -21,8 +21,71 @@
    row-gap: 2rem;
    column-gap: 4%;
    
-   /* grid-template-rows: repeat(50%); */
    height: auto;
    width: auto;
    
+}
+
+/* ----------------- ---------------------- */
+
+.box{
+   background-color: var(--bg-blanco);
+   padding-left: 16px; 
+   padding-bottom: 10px;
+   line-height: 0;
+   
+   height: 34vw;
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+}
+
+.box__img{
+   width: 30px;
+   height: 35px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.box__img--html{
+   background-image: url(../img/Logos/html-5.svg);   
+}
+
+.box__img--css{
+   background-image: url(../img/Logos/css.svg);
+}
+
+.box__img--javaScript{
+   background-image: url(../img/Logos/javaScript.svg);
+}
+
+.box__img--C-sharp{
+   background-image: url(../img/Logos/c-sharp.svg);
+}
+
+.box__img--visual-studio-code{
+   background-image: url(../img/Logos/visual-studio-code.svg);
+}
+
+.box__img--guitar{
+   background-image: url(../img/Logos/guitar.png);
+}
+
+.box__img--running{
+   background-image: url(../img/Logos/running.png);
+}
+
+.box__img--basketball{
+   background-image: url(../img/Logos/basketball.png);
+}
+
+.box__img--music{
+   background-image: url(../img/Logos/music.png);
+}
+
+.box__img--movies{
+   background-image: url(../img/Logos/movies.png);
 }
