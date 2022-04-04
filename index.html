@@ -32,7 +32,7 @@
    <link href="./CSS/contacto.css" rel="stylesheet">
 
    <link href="./CSS/footer.css" rel="stylesheet">
-   
+
    <link href="./CSS/responsive.css" rel="stylesheet" />
 
 </head>
@@ -298,37 +298,42 @@
                   lo antes posible.
                </p>
                <form class="contacto__formulario" action="">
-         
-                  <div class="float-text">
-                     <input class="float-text__input" type="text" name="nombre" autocomplete="off" required>
-                     <span class="float-text__highlight"></span>
-                     <span class="float-text__bar"></span>
-                     <label class="float-text__label">Nombre</label>
+                     <!--  ========  input name  =========  -->
+                  <div class="input-container">
+                     <input class="input" name="name" id="name" type="text" autocomplete="off" placeholder="Nombre"
+                        data-tipo="nombre" minlength="3" maxlength="5" required>
+                     <label class="input-label" for="name">Nombre</label>
+                     <span class="input__bar"></span>
+                     <span class="message-error">Este campo no es valido</span>
                   </div>
-
-                  <div class="float-text">
-                     <input class="float-text__input" type="email" name="email" autocomplete="off" required>
-                     <span class="float-text__highlight"></span>
-                     <span class="float-text__bar"></span>
-                     <label class="float-text__label">E-mail</label>
+                     <!--  ========  input E-mail  =========  -->
+                  <div class="input-container">
+                     <input class="input" name="email" id="email" type="email" autocomplete="off" placeholder="E-mail"
+                        data-tipo="email" required>
+                     <label class="input-label" for="email">E-mail</label>
+                     <span class="input__bar"></span>
+                     <span class="message-error">Este campo no es valido</span>
                   </div>
-
-                  <div class="float-text">
-                     <input class="float-text__input" type="text" name="asunto" autocomplete="off" required>
-                     <span class="float-text__highlight"></span>
-                     <span class="float-text__bar"></span>
-                     <label class="float-text__label">Asunto</label>
+                        <!--  ========  input Asunto  =========  -->
+                  <div class="input-container">
+                     <input class="input" name="asunto" id="asunto" type="text" autocomplete="off" placeholder="Asunto"
+                        data-tipo="asunto" required>
+                     <label class="input-label" for="asunto">Asunto</label>
+                     <span class="input__bar"></span>
+                     <span class="message-error">Este campo no es valido</span>
                   </div>
+                        <!--  ========  input Mensaje  =========  -->
+                  <div class="textarea-container">
+                     <textarea class="textarea input" name="mensaje" type="text" rows="4" minlength="10" maxlength="300"
+                        autocomplete="off" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
+                     <label class="textarea-label" for="mensaje">Mensaje</label>
+                     <span class="textarea__bar"></span>
 
-                  <div class="float-text">
-                     <textarea class="float-text__input form__input--textarea" 
-                        type="text" rows="4" name="mensaje" required></textarea>
-                     <span class="float-text__highlight"></span>
-                     <span class="float-text__bar"></span>
-                     <label class="float-text__label">Mensaje</label>
+                     <span class="message-error">Este campo no es valido</span>
+
                   </div>
-
-                  <input class="boton form__enviar" type="submit" value="Enviar mensaje">
+                     <!--  ========  input Submit  =========  -->
+                  <input class="boton form__enviar" type="submit" data-enviar value="Enviar mensaje">
 
                </form>
 
@@ -343,6 +348,7 @@
       <p class="footer__texto">Desarrollado por A. Martin Alcaraz</p>
       <p class="footer__texto">2022 &copy; </p>
    </footer>
+   <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

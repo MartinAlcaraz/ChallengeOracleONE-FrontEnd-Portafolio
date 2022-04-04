@@ -38,116 +38,215 @@
 }
 
 
-.form__input--textarea{
-    resize: none;
+
+
+.input-container {
+
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
 }
 
-/* -------  float-text = texto que flota hacia arriba en los input  ------------------- */
 
-.float-text { 
-    position:relative; 
-    margin: 2rem 0; 
-  }
-  
-.float-text__input {
-    border: none;
-    border-bottom: 1px solid var(--texto-gris-claro);
-    caret-color: var(--texto-azul-boton);
-    font-weight: 400;
-    font-size: 16px;
-    padding: 20px 20px 20px 15px;
-    display: block;
-    width: 100%;
-  }
-  
-  .float-text__input:focus {
-    outline:none;
-  }
-  
-  .float-text__label {
-    color: var(--texto-gris-claro);
-    font-weight: 400;
-    position: absolute;
-    pointer-events: none;
-    left: 15px;
-    top: 20px;
-    transition:0.3s ease all; 
-    -moz-transition:0.3s ease all; 
-    -webkit-transition:0.3s ease all;
-  }
-  
-  /* active state */
-  .float-text__input:focus ~ .float-text__label, .float-text__input:valid ~ .float-text__label {
-    top: 5px;
-    color: var(--texto-azul-boton);
-    font-size:12px;
-    font-weight: 400;
-    line-height: 16px;
-  }
+.input {
+  font-weight: 400;
+  font-size: 16px;
+  /* padding: 20px 20px 20px 15px; */
+  color: var(--texto-gris);
+  caret-color: var(--texto-azul-boton);
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--bg-boton-azul);
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+}
 
-  
-  
-  .float-text__bar {
-    position:relative; 
-    display:block;
-    top: -2px;
-    width:100%; 
-  }
-  
-  .float-text__bar:before, .float-text__bar:after {
-    content:'';
-    height:2px; 
-    width:0;
-    position:absolute;
-    background: var(--texto-azul-boton); 
-    transition:0.3s ease all; 
-    -moz-transition:0.3s ease all; 
-    -webkit-transition:0.3s ease all;
-  }
-  
-  .float-text__bar:before {
-    left:50%;
-  }
-  
-  .float-text__bar:after {
-    right:50%; 
-  }
-  
-  .float-text__input:focus ~ .float-text__bar:before,
-   .float-text__input:focus ~ .float-text__bar:after {
-    width:50%;
-  }
-  
-  .float-text__highlight {
-    position:absolute;
-    height:60%; 
-    width:100px; 
-    top:25%; 
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-  }
-  
-  .float-text__input:focus ~ .float__highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
-  }
+.input::placeholder {
+  visibility: hidden;
+  color: var(--texto-gris);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: 400;
+
+  transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+  color: var(--texto-azul-boton);
+}
+
+/* ========= barra expandible =============== */
 
 
+.input__bar {
+  position:relative; 
+  display:block;
+  top: -2px;
+  width:100%; 
+}
+
+.input__bar:before, .input__bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  position:absolute;
+  background: var(--texto-azul-boton); 
+  transition:0.3s ease all; 
+  -moz-transition:0.3s ease all; 
+  -webkit-transition:0.3s ease all;
+}
+
+.input__bar:before {
+  left:50%;
+}
+
+.input__bar:after {
+  right:50%; 
+}
+
+.input:focus ~ .input__bar:before,
+ .input:focus ~ .input__bar:after {
+  width:50%;
+}
+
+
+/* =============    inputs invalidos    ============= */
+
+
+.message-error {
+  display: block;
+  visibility: hidden;
+  height: 1rem;
+  margin-top: -2px;
+  margin-bottom: 2px;
+  color: var(--warning-color);
+  border:none;
+  font-size: 12px;
+  padding-left: 0.5rem;
+}
+
+.input__invalid {
+  color: var(--warning-color);
+}
+
+.input__invalid .message-error {
+  visibility: visible;  
+}
+
+.input__invalid .input {
+  border-bottom: 2px solid var(--warning-color);
   
-  /* ANIMATIONS ================ */
+}
 
-  @-webkit-keyframes inputHighlighter {
-      from { background: var(--texto-azul-boton); }
-    to 	{ width:0; background:transparent; }
-  }
-  @-moz-keyframes inputHighlighter {
-      from { background: var(--texto-azul-boton); }
-    to 	{ width:0; background:transparent; }
-  }
-  @keyframes inputHighlighter {
-      from { background: var(--texto-azul-boton); }
-    to 	{ width:0; background:transparent; }
-  }
+.input__invalid .input__bar:before, .input__invalid .input__bar:after {
+  background: var(--warning-color);
+}
 
+
+.input__invalid .textarea__bar:before, .input__invalid .textarea__bar:after {
+  background: var(--warning-color);
+}
+
+
+
+
+/* ========================= textarea ============================= */
+
+
+.textarea-container {
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.textarea {  
+  height: 7rem;  
+  resize: none;
+}
+
+
+.textarea::placeholder {
+  visibility: hidden;
+  color: var(--texto-gris);
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: 400;
+  transition: all 0.25s;
+}
+
+
+.textarea:focus + .textarea-label {    /* problema del texto flotante resuelto separando esta clase de la de abajo */
+  font-size: 0.875rem;                 /* estaban en la misma linea separados por una coma */
+  top: 0.25rem;
+  transition: all 0.25s;
+  color: var(--texto-azul-boton);
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+  color: var(--texto-azul-boton);
+} 
+
+
+
+
+/* ========= barra expandible =============== */
+
+ 
+.textarea__bar {
+  position:relative; 
+  display:block;
+  top: -4px;
+  width:100%; 
+}
+
+.textarea__bar:before, .textarea__bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  position:absolute;
+  background: var(--texto-azul-boton); 
+  transition:0.3s ease all; 
+  -moz-transition:0.3s ease all; 
+  -webkit-transition:0.3s ease all;
+}
+
+.textarea__bar:before {
+  left:50%;
+}
+
+.textarea__bar:after {
+  right:50%; 
+}
+
+.textarea:focus ~ .textarea__bar:before,
+ .textarea:focus ~ .textarea__bar:after {
+  width:50%;
+} 
