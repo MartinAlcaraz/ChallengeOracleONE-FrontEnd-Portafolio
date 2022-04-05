@@ -297,24 +297,31 @@
                   Complete el siguiente formulario y me pondré en contacto con usted
                   lo antes posible.
                </p>
+               
                <form class="contacto__formulario" action="">
-                     <!--  ========  input name  =========  -->
+
+                  <!--  ========  input name  =========  -->
                   <div class="input-container">
                      <input class="input" name="name" id="name" type="text" autocomplete="off" placeholder="Nombre"
-                        data-tipo="nombre" minlength="3" maxlength="50" required>
+                        data-tipo="nombre" required>
                      <label class="input-label" for="name">Nombre</label>
                      <span class="input__bar"></span>
                      <span class="message-error">Este campo no es valido</span>
                   </div>
+
                      <!--  ========  input E-mail  =========  -->
                   <div class="input-container">
                      <input class="input" name="email" id="email" type="email" autocomplete="off" placeholder="E-mail"
-                        data-tipo="email" required>
+                        data-tipo="email" pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$" required>
+
+                     <!-- pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$" -->
+
                      <label class="input-label" for="email">E-mail</label>
                      <span class="input__bar"></span>
                      <span class="message-error">Este campo no es valido</span>
                   </div>
-                        <!--  ========  input Asunto  =========  -->
+
+                  <!--  ========  input Asunto  =========  -->
                   <div class="input-container">
                      <input class="input" name="asunto" id="asunto" type="text" autocomplete="off" placeholder="Asunto"
                         data-tipo="asunto" required>
@@ -322,9 +329,10 @@
                      <span class="input__bar"></span>
                      <span class="message-error">Este campo no es valido</span>
                   </div>
-                        <!--  ========  input Mensaje  =========  -->
+
+                  <!--  ========  input Mensaje  =========  -->
                   <div class="textarea-container">
-                     <textarea class="textarea input" name="mensaje" type="text" rows="4" minlength="10" maxlength="300"
+                     <textarea class="textarea input" name="mensaje" type="text" rows="4" 
                         autocomplete="off" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
                      <label class="textarea-label" for="mensaje">Mensaje</label>
                      <span class="textarea__bar"></span>
@@ -332,7 +340,8 @@
                      <span class="message-error">Este campo no es valido</span>
 
                   </div>
-                     <!--  ========  input Submit  =========  -->
+
+                  <!--  ========  input Submit  =========  -->
                   <input class="boton form__enviar" type="submit" data-enviar value="Enviar mensaje">
 
                </form>
