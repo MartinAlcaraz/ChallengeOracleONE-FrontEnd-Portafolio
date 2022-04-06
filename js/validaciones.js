@@ -1,10 +1,10 @@
 
+
 export const validar = (input) => {
     const tipoDeInput = (input.dataset.tipo);
     
     // para que input.validity.valid sea true (input.validity.valid=true) hay que setear setCustomValidity("")
     // con string vacío ""      
-    
     
     if (validadores[tipoDeInput]) {        //  validador usando validadores personalizados junto con setCustomValidity().
         validadores[tipoDeInput](input);   //   si setCustomValidity("") manda algun string porque existe un error
@@ -22,7 +22,6 @@ export const validar = (input) => {
         input.parentElement.querySelector(".message-error").innerHTML = mensajeDeError;
         
     }
-
 }
 
         // validacion del formulario completo, se habilita si todos los campos estan llenos
