@@ -21,7 +21,10 @@ inputs.forEach((input) => {
 });
 
 enviar.addEventListener("click", () => {
+
     // inputs.forEach((input) => {
     //     validar(input);
     // });
+
 });
+

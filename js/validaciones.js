@@ -111,6 +111,7 @@ const validarMensaje = (input) => {
 }
 
 
+
 const tipoDeErrores = [     // vector con los tipos de errores que pueden ocurrir
     "valueMissing",
     "typeMismatch",
