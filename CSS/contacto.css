@@ -24,8 +24,8 @@
 }
 
 
-.form__enviar {
-    background-color: var(--bg-boton-azul);
+.form__boton-enviar--disabled {
+    background-color: var(--texto-gris);
     border: none;
     box-shadow: 2px 2px 2px rgba(10,10,10, 0.5);
     color: var(--texto-blanco-boton);
@@ -37,11 +37,27 @@
     text-decoration: none;
 }
 
+.form__boton-enviar--disabled:hover {
+  cursor: pointer;
+}
+
+.form__boton-enviar--enabled:hover {
+  cursor: pointer;
+}
+
+.form__boton-enviar--enabled{
+  background-color: var(--bg-boton-azul);
+}
+
+.form__boton-enviar--enabled:active {
+ transform: translate(2px,2px);
+ box-shadow: none;
+}
+
 
 
 
 .input-container {
-
   font-weight: 400;
   position: relative;
   margin-bottom: 0rem;
@@ -50,7 +66,6 @@
   justify-content: flex-end;
   box-sizing: border-box;
 }
-
 
 .input {
   font-weight: 400;

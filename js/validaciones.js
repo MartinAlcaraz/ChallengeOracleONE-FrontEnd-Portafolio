@@ -14,12 +14,37 @@ export const validar = (input) => {
         
         input.parentElement.querySelector(".message-error").innerHTML = "";
         input.parentElement.classList.remove("input__invalid");
+
     } else {
+        
         input.parentElement.classList.add("input__invalid");             
         let mensajeDeError = mostrarMensajeDeError(input, tipoDeInput);  // => validador usando mensajes personalizados
         input.parentElement.querySelector(".message-error").innerHTML = mensajeDeError;
+        
     }
 
+}
+
+        // validacion del formulario completo, se habilita si todos los campos estan llenos
+export const habilitarBotonEnviar = (inputs) => {
+    const boton_submit = document.querySelector("[data-submit]");
+
+    let esValido = true;
+    let i = 0;
+    while ((esValido) && (i < inputs.length)) {
+        if (inputs[i].validity.valueMissing){
+            esValido = false;
+        }
+        i++;
+    }
+
+    if (esValido) {
+        boton_submit.classList.add("form__boton-enviar--enabled");
+        boton_submit.disabled = false;
+    } else {
+        boton_submit.classList.remove("form__boton-enviar--enabled");
+        boton_submit.disabled = true;
+    }
 }
 
 const validadores = {
